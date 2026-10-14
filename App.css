@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+  background: linear-gradient(135deg, #ffd6e8 0%, #d4e9ff 50%, #e0d4ff 100%);
+  background-attachment: fixed;
+  color: #4a2d5c;
+  min-height: 100vh;
+  padding: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+body[data-theme="dark"] {
+  background: #1a1024;
+  color: #f3e8ff;
+  background-image: none;
+}
+
+main {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 32px 36px;
+  border-radius: 24px;
+  border: 3px solid #ffb6d9;
+  box-shadow: 0 12px 32px rgba(255, 150, 200, 0.3),
+              0 4px 12px rgba(150, 100, 200, 0.15);
+  text-align: center;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+body[data-theme="dark"] main {
+  background: #2a1a3a;
+  border-color: #7a4db5;
+  box-shadow: 0 12px 32px rgba(122, 77, 181, 0.4);
+}
+
+h1 {
+  color: #b03b8a;
+  font-size: 32px;
+  margin: 0 0 20px;
+  text-shadow: 2px 2px 0 #ffe4f0;
+  transition: color 0.3s;
+}
+
+body[data-theme="dark"] h1 {
+  color: #e0b3ff;
+  text-shadow: 2px 2px 0 #3a1f4a;
+}
+
+p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+input,
+select {
+  font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+  padding: 10px 14px;
+  margin: 6px 4px;
+  border: 2px solid #ffb6d9;
+  border-radius: 12px;
+  font-size: 16px;
+  background: #fff8fc;
+  color: #4a2d5c;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+select:focus {
+  border-color: #b03b8a;
+  box-shadow: 0 0 0 3px rgba(255, 182, 217, 0.4);
+}
+
+button {
+  font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+  padding: 10px 20px;
+  margin: 6px 4px;
+  border: 0;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #ff8fc7, #b06bff);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(176, 107, 255, 0.35);
+  transition: transform 0.15s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(176, 107, 255, 0.5);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(176, 107, 255, 0.35);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+}
+
+li {
+  background: #fff4fa;
+  padding: 10px 16px;
+  margin: 8px 0;
+  border-radius: 12px;
+  border-left: 5px solid #ff8fc7;
+  text-align: left;
+}
+
+body[data-theme="dark"] li {
+  background: #3a2450;
+  border-left-color: #b06bff;
+}
